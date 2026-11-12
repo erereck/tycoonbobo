@@ -1,0 +1,19 @@
+{
+  "name": "noob-empire-tycoon",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/fredoka": "^5.3.0",
+    "@fontsource/lilita-one": "^5.3.0",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
