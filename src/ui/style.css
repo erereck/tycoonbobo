@@ -380,3 +380,8 @@ body.cine #hud > *:not(#announce) { opacity: 0; transition: opacity .3s; }
 /* ---------- juice ---------- */
 .modal-bg { backdrop-filter: blur(4px) saturate(1.1); }
 .flycoin { position: absolute; left: 0; top: 0; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff5a8, #ffc928 55%, #c98a00); border: 3px solid var(--stroke); pointer-events: none; z-index: 45; will-change: transform; }
+
+/* ---------- logo: "tycoonbobo" as a single word, two colors ---------- */
+#title .logo { font-size: clamp(54px, 8.2vw, 118px); white-space: nowrap; letter-spacing: 1px; }
+#title .logo span { display: inline; font-size: 1em; }
+.ld-title { letter-spacing: 1px; }

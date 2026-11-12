@@ -1,4 +1,4 @@
-// NOOB EMPIRE — Tycoon da Floresta. Boot + main loop.
+// tycoonbobo — boot + main loop.
 import '@fontsource/lilita-one';
 import '@fontsource/fredoka/400.css';
 import '@fontsource/fredoka/600.css';

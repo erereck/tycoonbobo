@@ -690,7 +690,7 @@ export function createHUD() {
   });
   // ---------- title ----------
   U.showTitle = (hasSave, onPlay) => {
-    const t = h(`<div id="title"><div class="logo">NOOB<span>EMPIRE</span></div><div class="tag stroke-s">🌲 Tycoon da Floresta — do noob ao <span style="color:#ffd23f">#1 do planeta Terra</span></div>
+    const t = h(`<div id="title"><div class="logo">tycoon<span>bobo</span></div><div class="tag stroke-s">🌲 Tycoon da Floresta — do noob ao <span style="color:#ffd23f">#1 do planeta Terra</span></div>
       <div class="menu"><button class="rbtn" data-a="play">${hasSave ? 'CONTINUAR' : 'JOGAR'}</button>${hasSave ? '<button class="rbtn red small" data-a="new">NOVO JOGO</button>' : ''}<button class="rbtn blue small" data-a="help">COMO JOGAR</button><button class="rbtn gray small" data-a="settings">CONFIGURAÇÕES</button></div>
       <div class="foot">Protótipo • Área 1: Floresta • Feito com Three.js</div><div class="ver">v0.2 • build profissional</div></div>`);
     root.appendChild(t);
