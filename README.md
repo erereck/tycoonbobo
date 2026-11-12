@@ -1,6 +1,6 @@
-# NOOB EMPIRE — Tycoon da Floresta 🌲
+# tycoonbobo 🌲
 
-**Jogar agora:** https://erereck.github.io/noob-empire/
+**Jogar agora:** https://erereck.github.io/tycoonbobo/
 
 Protótipo de jogo web 3D: um **tycoon estilo Roblox** com **câmera e combate estilo League of Legends**.
 Você começa como o Noob numa clareira da floresta e precisa virar o **#1 do planeta Terra**.

@@ -393,7 +393,7 @@ export function createTycoon(scene) {
       construct('andar1', ({ b, bt, extra }) => {
         S.stage1(b, bt('F0'), bt('L1'));
         // big sign over the door (hidden together with the front wall when you're inside)
-        const st = S.signTexture('NOOB EMPIRE', 'TYCOON • FLORESTA');
+        const st = S.signTexture('tycoonbobo', 'área 1 • floresta');
         const side = getMat('plastic', 0x0b4f8f);
         const sign = new THREE.Mesh(new THREE.BoxGeometry(20, 5, 0.6), [side, side, side, side, new THREE.MeshStandardMaterial({ map: st, roughness: 0.4, emissive: 0xffffff, emissiveIntensity: 0.18, emissiveMap: st }), side]);
         sign.position.set(0, 14.6, 10.6);

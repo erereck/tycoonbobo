@@ -176,7 +176,8 @@ export function createAbilities() {
 }
 
 // ---------------- save / load ----------------
-const KEY = 'noob-empire-save-v1';
+const KEY = 'tycoonbobo-save-v1';
+const OLD_KEY = 'noob-empire-save-v1'; // saves from before the rename are migrated on load
 export function saveGame() {
   if (G.wiped) return;
   try {
@@ -189,7 +190,7 @@ export function saveGame() {
 }
 export function loadGame() {
   try {
-    const s = localStorage.getItem(KEY);
+    const s = localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY);
     if (!s) return null;
     const st = JSON.parse(s);
     return { ...defaultState(), ...st, items: { ...defaultState().items, ...(st.items || {}) } };
@@ -199,7 +200,7 @@ export function loadGame() {
 }
 export function loadSettings() {
   try {
-    const s = localStorage.getItem(KEY + '-settings');
+    const s = localStorage.getItem(KEY + '-settings') ?? localStorage.getItem(OLD_KEY + '-settings');
     return s ? JSON.parse(s) : null;
   } catch (e) {
     return null;
@@ -209,6 +210,7 @@ export function wipeSave() {
   G.wiped = true;
   try {
     localStorage.removeItem(KEY);
+    localStorage.removeItem(OLD_KEY);
   } catch (e) {
     /* ignore */
   }
